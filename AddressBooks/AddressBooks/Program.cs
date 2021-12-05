@@ -19,23 +19,26 @@ namespace AddressBooks
             switch (Console.ReadLine())
             {
                 case "1":
-                    Sample.AddrBook.GetCustomer();
-                    Sample.AddrBook.ListingPeople();
+                     AddressBooks.AddrBook.GetCustomer();
+                     AddressBooks.AddrBook.ListingPeople();
                     break;
-                case "2":
-                    Sample.AddrBook.GetCustomer();
-                    Sample.AddrBook.Modify();
-                    Sample.AddrBook.ListingPeople();
-                    break;
-                case "3":
-                    Sample.AddrBook.GetCustomer();
-                    Sample.AddrBook.ListingPeople();
-                    break;
-                case "4":
-                    Sample.AddrBook.GetCustomer();
-                    Sample.AddrBook.RemovePeople();
 
+                case "2":
+                     AddressBooks.AddrBook.GetCustomer();
+                     AddressBooks.AddrBook.Modify();
+                     AddressBooks.AddrBook.ListingPeople();
                     break;
+
+                case "3":
+                     AddressBooks.AddrBook.GetCustomer();
+                     AddressBooks.AddrBook.ListingPeople();
+                    break;
+
+                case "4":
+                     AddressBooks.AddrBook.GetCustomer();
+                     AddressBooks.AddrBook.RemovePeople();
+                     break;
+
                 default:
                     Console.WriteLine("Enter a valid option");
                     break;
