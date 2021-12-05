@@ -26,9 +26,6 @@ namespace AddressBooks
             throw new NotImplementedException();
         }
 
-
-
-
         public static void GetCustomer()
         {
             Person person = new Person();
@@ -142,6 +139,25 @@ namespace AddressBooks
 
             }
         }
+        //Removing the detail
+        public static void RemovePeople()
+        {
+            Console.WriteLine("Enter the first name of the person you would like to remove.");
+            string Remove = Console.ReadLine();
+            foreach (var person in People.ToList())
+            {
+                if (person.FirstName.ToUpper() == Remove.ToUpper())
+                {
+                    People.Remove(person);
+                    Console.WriteLine("Contact is deleted");
+                }
+                else
+                {
+                    Console.WriteLine("Contact is not present");
+                }
+            }
+        }
+
         public static void ListingPeople()
         {
             if (People.Count == 0)
