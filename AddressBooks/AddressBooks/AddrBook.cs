@@ -21,6 +21,11 @@ namespace AddressBooks
             public string PhoneNum { get; set; }
             public string EmailId { get; set; }
         }
+        internal static void PrintCustomer(object person)
+        {
+            throw new NotImplementedException();
+        }
+
 
 
 
